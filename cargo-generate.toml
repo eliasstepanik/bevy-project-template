@@ -16,4 +16,6 @@ prompt = "Project description"
 ignore = [ "src/main.rs" ]
 
 [conditional.'crate_type == "bin"']
-ignore = [ "src/lib.rs" ]
+ignore = [ "assets/*" ]
+
+
