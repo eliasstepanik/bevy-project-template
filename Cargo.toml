@@ -1,7 +1,11 @@
 [package]
-name = "bevy-project-template"
+name = "{{project-name}}"
 version = "0.1.0"
 edition = "2021"
+description = "{{project-description}}"
+repository = "https://github.com/{{gh-username}}/{{project-name}}"
+license = "MIT OR Apache-2.0"
+
 
 [dependencies]
 bevy = { version = "0.15.1", features = ["jpeg", "trace_tracy", "trace_tracy_memory"] }
@@ -12,6 +16,3 @@ bevy_reflect = "0.15.0"
 bevy_render = "0.15.0"
 bevy_window = "0.15.0"
 egui_dock = "0.14.0"
-bytemuck = "1.13"
-bevy_mod_debugdump = "0.12.1"
-log = "0.4.25"
