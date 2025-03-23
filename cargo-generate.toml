@@ -1,6 +1,6 @@
 [template]
 cargo_generate_version = ">=0.10.0"
-ignore = [ "assets/*" ]
+ignore = [ "assets/fonts/minecraft_font.ttf" ]
 
 [placeholders.gh-username]
 type = "string"
