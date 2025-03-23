@@ -68,19 +68,17 @@ fn register_platform_plugins(app: &mut App) {
     #[cfg(target_os = "macos")]
     {
         info!("Adding macOS-specific plugins");
-        app.add_plugins(DefaultPlugins)
-            .set(WindowPlugin {
+        app.add_plugins(DefaultPlugins.set(WindowPlugin {
                 primary_window: Some(Window {
-                    title: crate::TITLE.to_string(), // Window title
-                    resolution: crate::RESOLUTION.into(), // Initial resolution (width x height)
-                    resizable: crate::RESIZABLE,                   // Allow resizing
-                    decorations: crate::DECORATIONS,                 // Enable window decorations
-                    transparent: crate::TRANSPARENT,                // Opaque background
-                    present_mode: crate::PRESENT_MODE, // VSync mode
-                    ..default()
-                }),
+                title: crate::TITLE.to_string(), // Window title
+                resolution: crate::RESOLUTION.into(), // Initial resolution (width x height)
+                resizable: crate::RESIZABLE,                   // Allow resizing
+                decorations: crate::DECORATIONS,                 // Enable window decorations
+                transparent: crate::TRANSPARENT,                // Opaque background
+                present_mode: crate::PRESENT_MODE, // VSync mode
+                ..default() }),
                 ..default()
-            });
+            }));
     }
 }
 fn should_display_inspector(inspector_visible: Res<InspectorVisible>) -> bool {
