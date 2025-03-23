@@ -12,7 +12,7 @@ use bevy_inspector_egui::DefaultInspectorConfigPlugin;
 use bevy_window::{PresentMode, Window, WindowPlugin};
 use crate::app::AppPlugin;
 
-const TITLE: &str = "Project Template";
+const TITLE: &str = "{{project-name}}";
 const RESOLUTION: (f32,f32) = (1920f32, 1080f32);
 const RESIZABLE: bool =  true;
 const DECORATIONS: bool =  true;
