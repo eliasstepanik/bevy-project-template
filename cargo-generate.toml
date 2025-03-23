@@ -1,5 +1,6 @@
 [template]
 cargo_generate_version = ">=0.10.0"
+ignore = [ "assets/*" ]
 
 [placeholders.gh-username]
 type = "string"
@@ -16,6 +17,6 @@ prompt = "Project description"
 ignore = [ "src/main.rs" ]
 
 [conditional.'crate_type == "bin"']
-ignore = [ "assets/*" ]
+ignore = [ "src/lib.rs" ]
 
 
