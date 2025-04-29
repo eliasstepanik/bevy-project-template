@@ -10,7 +10,7 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 bevy = { version = "0.15.1", features = ["jpeg", "trace_tracy", "trace_tracy_memory"] }
 bevy_egui = "0.31.1"
-bevy_asset = "0.15.0"
+bevy_asset = "0.16.0"
 bevy-inspector-egui = "0.28.0"
 bevy_reflect = "0.15.0"
 bevy_render = "0.15.0"
